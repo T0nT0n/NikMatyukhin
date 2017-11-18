@@ -13,14 +13,14 @@ int main()
 	int a = 0, b = 0, NOK = 0, NOD = 0;
 
 	setlocale(0,"");
-	printf("Введите два числа A и B: ");
+	printf("Введите два числа A и B: \n");
 	scanf("%d%d", &a, &b);
 
 	NOK = NOKab(a,b);
 
 	NOD = NODab(a,b);
 
-	printf("НОК чисел %d и %d - %d.  НОД чисел %d и %d - %d", a,b,NOK,a,b,NOD);
+	printf("\n\tВычесленное НОК чисел %d и %d равно %d\n\tВычесленный НОД чисел %d и %d равен %d\n", a,b,NOK,a,b,NOD);
 
 	if (a > b) printf("Кстати, a > b"); else if (a < b) printf("Кстати, a < b"); else printf("Кстати, a == b");
 
